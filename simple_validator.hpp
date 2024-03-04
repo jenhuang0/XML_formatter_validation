@@ -2,6 +2,20 @@
 #include <string>
 #include <stack>
 
+/**
+ * Determine if a given XML string is well-formed.
+ * 
+ * This function checks whether the input string is a well-formed XML string.
+ * A well-formed XML string must satisfy the following conditions:
+ * - Each starting element must have a corresponding ending element.
+ * - Elements must be well-nested.
+ * 
+ * Parameters:
+ * input (const std::string&): The XML string to be checked.
+ * 
+ * Returns:
+ * bool: True if the XML string is well-formed, False otherwise.
+ */
 bool DetermineXml(const std::string &input)
 {
     std::stack<std::string> tags;
@@ -24,7 +38,7 @@ bool DetermineXml(const std::string &input)
                 return false;
             }
             inTag = false;
-            
+
             if(currentTag.empty()){
                 //malformed xml: empty tag 
                 return false;
@@ -37,7 +51,7 @@ bool DetermineXml(const std::string &input)
                     //malformed xml: closing tag without a corresponding opening tag
                     return false;
                 }
-                tags.pop();
+                tags.pop(); 
             }
             else{
                 //opening tag
