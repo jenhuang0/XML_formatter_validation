@@ -62,9 +62,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 ```
 
 After building successfully, you will see `checker` in your directory:
-![[img/1.png]]
+![img1](img/1.png)
 
 Double click `checker` and see the result:
-![[img/2.png]]
+![img2](img/2.png)
 
 
