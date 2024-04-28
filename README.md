@@ -1,6 +1,3 @@
-# What is the project about?
-This project is a interview take home coding test from BoostDraft. 
-
 # Goal: 
 Create a console application with the following specifications
 - Input: an XML string (at least one character)
